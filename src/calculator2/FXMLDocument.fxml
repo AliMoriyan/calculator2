@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="allID" prefHeight="491.0" prefWidth="320" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator2.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextArea fx:id="entryID" editable="false" layoutX="20.0" layoutY="20.0" prefHeight="78.0" prefWidth="280.0" promptText="Please Enter Number" AnchorPane.bottomAnchor="431.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="sqrtID" layoutX="20.0" layoutY="137.0" mnemonicParsing="false" onAction="#sqrt" prefHeight="25.0" prefWidth="52.0" text="sqrt" AnchorPane.leftAnchor="20.0" />
+      <Label fx:id="resultID" layoutX="20.0" layoutY="84.0" onDragDetected="#result" prefHeight="25.0" prefWidth="52.0" text="Result : " />
+      <TextArea fx:id="showID" editable="false" layoutX="72.0" layoutY="74.0" prefHeight="45.0" prefWidth="230.0" AnchorPane.bottomAnchor="374.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="74.0" />
+      <Button fx:id="pow2ID" layoutX="82.0" layoutY="137.0" mnemonicParsing="false" onAction="#pow2" prefHeight="25.0" prefWidth="52.0" text="x^2" />
+      <Button fx:id="sinID" layoutX="20.0" layoutY="169.0" mnemonicParsing="false" onAction="#sin" prefHeight="25.0" prefWidth="52.0" text="sin" AnchorPane.leftAnchor="20.0" />
+      <Button fx:id="pow3ID" layoutX="143.0" layoutY="137.0" mnemonicParsing="false" onAction="#pow3" prefHeight="25.0" prefWidth="52.0" text="x^3" />
+      <Button fx:id="cosID" layoutX="82.0" layoutY="169.0" mnemonicParsing="false" onAction="#cos" prefHeight="25.0" prefWidth="52.0" text="cos" />
+      <Button fx:id="tanID" layoutX="143.0" layoutY="169.0" mnemonicParsing="false" onAction="#tan" prefHeight="25.0" prefWidth="52.0" text="tan" />
+      <Button fx:id="sevenID" layoutX="20.0" layoutY="240.0" mnemonicParsing="false" onAction="#seven" prefHeight="52.0" prefWidth="52.0" text="7" textFill="BLUE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="nineID" layoutX="143.0" layoutY="240.0" mnemonicParsing="false" onAction="#nine" prefHeight="52.0" prefWidth="52.0" text="9" textFill="BLUE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="fourID" layoutX="20.0" layoutY="302.0" mnemonicParsing="false" onAction="#four" prefHeight="52.0" prefWidth="52.0" text="4" textFill="BLUE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="eightID" layoutX="82.0" layoutY="240.0" mnemonicParsing="false" onAction="#eight" prefHeight="52.0" prefWidth="52.0" text="8" textFill="BLUE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="threeID" layoutX="143.0" layoutY="365.0" mnemonicParsing="false" onAction="#three" prefHeight="52.0" prefWidth="52.0" text="3" textFill="BLUE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="twoID" layoutX="82.0" layoutY="365.0" mnemonicParsing="false" onAction="#two" prefHeight="52.0" prefWidth="52.0" text="2" textFill="BLUE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="oneID" layoutX="20.0" layoutY="365.0" mnemonicParsing="false" onAction="#one" prefHeight="52.0" prefWidth="52.0" text="1" textFill="BLUE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="sixID" layoutX="143.0" layoutY="302.0" mnemonicParsing="false" onAction="#six" prefHeight="52.0" prefWidth="52.0" text="6" textFill="BLUE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="fiveID" layoutX="82.0" layoutY="302.0" mnemonicParsing="false" onAction="#five" prefHeight="52.0" prefWidth="52.0" text="5" textFill="BLUE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="dotID" layoutX="143.0" layoutY="427.0" mnemonicParsing="false" onAction="#dot" prefHeight="52.0" prefWidth="52.0" text="." textFill="BLUE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="zeroID" layoutX="82.0" layoutY="427.0" mnemonicParsing="false" onAction="#zero" prefHeight="52.0" prefWidth="52.0" text="0" textFill="BLUE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="posNegID" layoutX="20.0" layoutY="427.0" mnemonicParsing="false" onAction="#posNeg" prefHeight="52.0" prefWidth="52.0" text="+-" textFill="BLUE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="posetiveID" layoutX="211.0" layoutY="240.0" mnemonicParsing="false" onAction="#posetive" prefHeight="52.0" prefWidth="40.0" text="+">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Separator fx:id="line2" layoutX="195.0" layoutY="236.0" orientation="VERTICAL" prefHeight="245.0" prefWidth="15.0" AnchorPane.rightAnchor="110.0" />
+      <Button fx:id="negativeID" layoutX="211.0" layoutY="301.0" mnemonicParsing="false" onAction="#negative" prefHeight="54.0" prefWidth="40.0" text="-">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="equalID" layoutX="262.0" layoutY="427.0" mnemonicParsing="false" onAction="#equal" prefHeight="52.0" prefWidth="40.0" text="=" />
+      <Button fx:id="darSadID" layoutX="262.0" layoutY="365.0" mnemonicParsing="false" onAction="#darSAD" prefHeight="52.0" prefWidth="40.0" text="\%" />
+      <Button fx:id="taghsimID" layoutX="211.0" layoutY="427.0" mnemonicParsing="false" onAction="#taghsim" prefHeight="52.0" prefWidth="40.0" text="/" />
+      <Button fx:id="multipiteID" layoutX="211.0" layoutY="365.0" mnemonicParsing="false" onAction="#multipite" prefHeight="52.0" prefWidth="40.0" text="X" />
+      <Button fx:id="randID" layoutX="20.0" layoutY="201.0" mnemonicParsing="false" onAction="#rand" prefHeight="25.0" prefWidth="52.0" text="rand" />
+      <Button fx:id="backID" layoutX="262.0" layoutY="302.0" mnemonicParsing="false" onAction="#back" prefHeight="52.0" prefWidth="40.0" text="BS" textFill="RED" />
+      <Button fx:id="base8ID" layoutX="143.0" layoutY="201.0" mnemonicParsing="false" onAction="#base8" prefHeight="25.0" prefWidth="52.0" text="base 8" />
+      <Button fx:id="bace2ID" layoutX="82.0" layoutY="201.0" mnemonicParsing="false" onAction="#base2" prefHeight="25.0" prefWidth="52.0" text="base 2" />
+      <Button fx:id="cleanID" layoutX="262.0" layoutY="240.0" mnemonicParsing="false" onAction="#clean" prefHeight="52.0" prefWidth="40.0" text="C" textFill="RED" AnchorPane.rightAnchor="19.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Separator fx:id="line1" layoutX="20.0" layoutY="228.0" prefHeight="10.0" prefWidth="280.0" />
+      <Button fx:id="standardID" layoutX="202.0" layoutY="137.0" mnemonicParsing="false" onAction="#standard" text="Standard" textFill="#dd00ca" />
+      <Button fx:id="scientificID" layoutX="202.0" layoutY="169.0" mnemonicParsing="false" onAction="#scientific" text="Scientific" textFill="#dd00ca" />
+      <Button fx:id="programmerID" layoutX="202.0" layoutY="201.0" mnemonicParsing="false" onAction="#programmer" prefHeight="25.0" prefWidth="98.0" text="Programmer" textFill="#dd00ca" />
+      <Button fx:id="offID" layoutX="273.0" layoutY="135.0" mnemonicParsing="false" onAction="#off" prefHeight="54.0" prefWidth="33.0" text="off" textFill="RED" AnchorPane.bottomAnchor="303.0" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="138.0" />
+      <Label fx:id="scieLabale" layoutX="14.0" layoutY="130.0" prefHeight="68.0" prefWidth="185.0" />
+      <Label fx:id="stanLable" layoutX="203.0" layoutY="231.0" prefHeight="255.0" prefWidth="52.0" />
+      <Label fx:id="posOrNegLabel" layoutX="14.0" layoutY="419.0" prefHeight="68.0" prefWidth="64.0" />
+      <Label fx:id="dutLabel1" layoutX="137.0" layoutY="419.0" prefHeight="68.0" prefWidth="64.0" />
+      <Label fx:id="stanLabel11" layoutX="249.0" layoutY="357.0" prefHeight="131.0" prefWidth="64.0" />
+      <Label fx:id="randLabel" layoutX="14.0" layoutY="193.0" prefHeight="46.0" prefWidth="64.0" />
+      <Label fx:id="proLabel" layoutX="72.0" layoutY="193.0" prefHeight="46.0" prefWidth="128.0" />
+      <Label fx:id="change" layoutX="-2.0" prefHeight="17.0" prefWidth="168.0" textFill="#120aab">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
